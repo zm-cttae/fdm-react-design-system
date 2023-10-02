@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Titillium+Web:wght@300;400;700&display=swap");
+
+:root {
+  --fdm22--brand-blue: #196ff7;
+  --fdm22--brand-indigo: #3b17ff;
+  --fdm22--brand-violet: #942cff;
+  --fdm22--brand-red: #ed0737;
+  --fdm22--brand-yellow: #fbb91a;
+  --fdm22--brand-green: #138750;
+  --fdm22--brand-cyan: #23deff;
+  --fdm22--brand-black: #000000;
+  --fdm22--brand-white: #eeeeee;
+  --fdm22--main-color: var(--fdm22--brand-black);
+  --fdm22--secondary-color: var(--fdm22--brand-black);
+  --fdm22--main-color-light: var(--fdm22--brand-blue);
+  --fdm22--action-color: var(--fdm22--brand-red);
+  --fdm22--text-color: var(--fdm22--brand-white);
+  --fdm22--card-border: color-mix(in oklab, var(--fdm22--brand-black), var(--fdm22--brand-white) 50%);
+  --fdm22--card-shadow: 0 2px 16px -1px rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  --fdm22--card-radius: 4px;
+  --fdm22--typography-font-header: "Titillium Web";
+  --fdm22--typography-font-text: Roboto;
+  --fdm22--typography-emoji: "Apple Color Emoji","Segoe UI Emoji";
+}
+
+.fdm__is-hidden {
+  display: none;
+}

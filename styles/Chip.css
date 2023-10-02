@@ -1,0 +1,11 @@
+.fdm__chip {
+  background-color: var(--fdm22--brand-red);
+  border-radius: 2px;
+  color: var(--fdm22--brand-white);
+  font-size: small;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  pointer-events: none;
+  user-select: none;
+}

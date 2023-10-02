@@ -1,0 +1,11 @@
+.fdm__is-card-border {
+  border: 1px solid var(--fdm22--text-color);
+}
+
+.fdm__is-card-shadow {
+  box-shadow: var(--fdm22--card-shadow);
+}
+
+.fdm__is-card-radius {
+  border-radius: var(--fdm22--card-radius);
+}

@@ -1,0 +1,123 @@
+a.fdm__photograph:hover, .fdm__photograph a:hover {
+  text-decoration: none;
+}
+
+.fdm__photograph {
+  --fdm--photograph-overlay-black: color-mix(in oklab, var(--fdm22--brand-black), transparent calc(10 / 16));
+  --fdm--photograph-gradient-stop-2-blue: color-mix(in oklab, var(--fdm22--brand-blue), transparent calc(8 / 16));
+  --fdm--photograph-gradient-stop-3-indigo: color-mix(in oklab, var(--fdm22--brand-indigo), transparent calc(4 / 16));
+}
+
+.fdm__photograph {
+  aspect-ratio: 1;
+  background-color: var(--fdm22--brand-white);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  -webkit-filter: brightness(83%) contrast(1.25) saturate(0.9);
+  filter: brightness(83%) contrast(1.25) saturate(0.9);
+  height: 0;
+  margin-bottom: 2em;
+  margin-right: 1em;
+  overflow: hidden;
+  padding-bottom: calc(100% - 1em);
+  position: relative;
+  text-align: center;
+  width: calc(100% - 1em);
+}
+
+.fdm__photograph.latest-article {
+  padding-bottom: calc(100% * 9 / 21);
+  width: calc(100% - 1em);
+}
+
+.fdm__photograph-filter {
+  content: " ";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.875;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.fdm__photograph-filter.fdm__filter-is-red {
+  background-image: linear-gradient(
+    270deg,
+    color-mix(in oklab, var(--fdm22--brand-red), transparent calc(14 / 16)),
+    color-mix(in oklab, var(--fdm22--brand-red), transparent calc(12 / 16)),
+    color-mix(in oklab, var(--fdm22--brand-red), transparent calc(8 / 16)),
+    transparent
+  );
+  filter: brightness(1.25);
+  mix-blend-mode: screen;
+  opacity: 0.675;
+  z-index: 1;
+}
+
+@supports not (mix-blend-mode: screen) {
+  .fdm__photograph-filter.fdm__filter-is-red {
+    opacity: 0.25;
+  }
+}
+
+.fdm__photograph-filter.fdm__filter-is-blue {
+  background-image: linear-gradient(60deg, var(--fdm22--brand-blue), var(--fdm--photograph-gradient-stop-2-blue), var(--fdm--photograph-gradient-stop-2-indigo), transparent);
+  opacity: 0.875;
+  z-index: 2;
+}
+
+.fdm__photograph .fdm__photograph-logo {
+  aspect-ratio: calc(261 / 150);
+  height: 80px;
+  order: 2;
+}
+
+.fdm__photograph h3 {
+  color: var(--fdm22--brand-white);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  order: 3;
+  padding: 0 0 1em 1em;
+  text-shadow: 0 0 2rem var(--fdm--photograph-overlay-black);
+  z-index: 3;
+}
+
+.fdm__photograph.latest-article h3 {
+  font-size: 28px;
+}
+
+.fdm__photograph h3:hover {
+  text-decoration: underline;
+}
+
+.fdm__photograph p.fdm__photograph-description {
+  font-size: 90%;
+  order: 4;
+  text-align: left;
+}
+
+.fdm__photograph .origin-chip {
+  background-color: var(--fdm22--brand-red);
+  border-radius: 2px;
+  color: var(--fdm22--brand-white);
+  -webkit-filter: brightness(120%);
+  filter: brightness(120%);
+  float: left;
+  font-size: small;
+  font-weight: bold;
+  left: 0;
+  margin: 28px 0 0 28px;
+  padding: 0 4px;
+  order: 1;
+  pointer-events: none;
+  position: absolute;
+  position: relative;
+  text-transform: uppercase;
+  top: 0;
+  z-index: 8;
+}
